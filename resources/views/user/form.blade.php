@@ -27,13 +27,13 @@
 
     <div class="form-group row">
         <label for="password">Password</label>
-        <input type="text" class="form-control" id="password" name= "password" placeholder="Password">
+        <input type="password" class="form-control" id="password" name="password" placeholder="Password">
 
     </div>
 
     <div class="form-group row">
         <label for="password">Confirm password</label>
-        <input type="text" class="form-control" id="passwordConfirm" name= "passwordConfirm" placeholder="Password">
+        <input type="password" class="form-control" id="passwordConfirm" name="passwordConfirm" placeholder="Password">
 
     </div>
 

@@ -116,7 +116,11 @@ class FeedbackController extends Controller
         DB::table('feedback')->where('id',$id)->update(array('title' => request('title')));
         DB::table('feedback')->where('id',$id)->update(array('text' => request('text')));
         //$feedback->save();
-        return redirect()->route('feedbackBlog.index');
+        if (Auth::user()->getIsAdmin()) {
+            return redirect()->route('feedbackBlog.index');
+        } else {
+            return redirect()->route('feedbackBlog.viewMy');
+        }
 
     }
 

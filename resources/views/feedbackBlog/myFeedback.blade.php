@@ -28,8 +28,9 @@
                                 </tr>
                             </table>
 
+                            @can('editSelf', App\Models\User::class)
                             <a href="{{route('user.edit', [Auth::user()->id])}} " title="Edit" class="btn btn-sm btn-primary" style="left: 50%;position: relative; transform: translateX(-50%); margin-top: 10px">Edit </a>
-
+                            @endcan
 
 
 
@@ -48,6 +49,7 @@
                     <h5>{{ $feedback->title }}</h5>
                     <p class="card-name">Napisal: {{ \App\Models\User::findOrFail($feedback->user_id)->name}}</p>
                     <p class="card-text">{{ $feedback->text }}</p>
+
                     <a href="{{route('feedbackBlog.edit', $feedback->id)}}" class="btn btn-sm btn-primary" role="button"> Edit </a>
                     <a href="{{route('feedbackBlog.delete', $feedback->id)}}" class="btn btn-sm btn-danger" role="button"> Delete </a>
 

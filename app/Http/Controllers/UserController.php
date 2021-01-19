@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Aginev\Datagrid\Datagrid;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
@@ -104,12 +105,16 @@ class UserController extends Controller
         $request->validate([
             'name' => 'required',
             'email' => 'required|email|unique:users,email,' . $user->id,
-            'password' => 'required|min:6|confirmed']);
-
-
+            'password' => 'required|min:6']);
 
         $user->update($request->all());
-        return redirect()->route('user.index');
+
+        if (Auth::user()->getIsAdmin()) {
+            return redirect()->route('user.index');
+        } else {
+            return redirect()->route('feedbackBlog.viewMy');
+        }
+
     }
 
     /**

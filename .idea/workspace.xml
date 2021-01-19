@@ -19,16 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e70889cc-039a-4939-b632-071ce3ad7465" name="Default Changelist" comment="profil tab upraveny, autentifikacia mena nefunguje dobre, edit password nefuguje">
+    <list default="true" id="e70889cc-039a-4939-b632-071ce3ad7465" name="Default Changelist" comment="zobrazovanie/skryvanie feedbackov na profil tabe funkcne, rozrobene like/dislike">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/css.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/feedbackBlog/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/feedbackBlog/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/UserPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/UserPolicy.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/feedbackBlog/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/feedbackBlog/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/feedbackBlog/myFeedback.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/feedbackBlog/myFeedback.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/form.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +206,7 @@
       <workItem from="1610891166634" duration="15660000" />
       <workItem from="1610974250363" duration="20431000" />
       <workItem from="1611051757493" duration="21887000" />
-      <workItem from="1611081810204" duration="15455000" />
+      <workItem from="1611081810204" duration="17527000" />
     </task>
     <task id="LOCAL-00001" summary="Funkcne feedbacky a users - ziadny dizajn">
       <created>1611052149561</created>
@@ -245,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611090892652</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="zobrazovanie/skryvanie feedbackov na profil tabe funkcne, rozrobene like/dislike">
+      <created>1611098013527</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1611098013527</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,7 +272,8 @@
     <MESSAGE value="dizajn progress" />
     <MESSAGE value="slideshow funguje + ajax autentifikacia emailu funguje" />
     <MESSAGE value="profil tab upraveny, autentifikacia mena nefunguje dobre, edit password nefuguje" />
-    <option name="LAST_COMMIT_MESSAGE" value="profil tab upraveny, autentifikacia mena nefunguje dobre, edit password nefuguje" />
+    <MESSAGE value="zobrazovanie/skryvanie feedbackov na profil tabe funkcne, rozrobene like/dislike" />
+    <option name="LAST_COMMIT_MESSAGE" value="zobrazovanie/skryvanie feedbackov na profil tabe funkcne, rozrobene like/dislike" />
   </component>
   <component name="WindowStateProjectService">
     <state x="194" y="255" key="#SQL_Dialects" timestamp="1610980666493">
@@ -324,10 +330,10 @@
     </state>
     <state x="605" y="337" key="NewPhpFileDialog/0.0.1536.824/3840.558.1920.1040@0.0.1536.824" timestamp="1610974396152" />
     <state x="4596" y="983" key="NewPhpFileDialog/0.0.1536.824/3840.558.1920.1040@3840.558.1920.1040" timestamp="1611059691739" />
-    <state x="4392" y="811" key="Vcs.Push.Dialog.v2" timestamp="1611090893708">
+    <state x="4392" y="811" key="Vcs.Push.Dialog.v2" timestamp="1611098015969">
       <screen x="3840" y="558" width="1920" height="1040" />
     </state>
-    <state x="4392" y="811" key="Vcs.Push.Dialog.v2/0.0.1536.824/3840.558.1920.1040@3840.558.1920.1040" timestamp="1611090893708" />
+    <state x="4392" y="811" key="Vcs.Push.Dialog.v2/0.0.1536.824/3840.558.1920.1040@3840.558.1920.1040" timestamp="1611098015969" />
     <state x="4650" y="938" width="310" height="242" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1611003105374">
       <screen x="3840" y="558" width="1920" height="1040" />
     </state>

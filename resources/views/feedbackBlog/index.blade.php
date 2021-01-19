@@ -24,14 +24,13 @@
                 <p class="card-name">Napisal: {{ \App\Models\User::findOrFail($feedback->user_id)->name}}</p>
                 <p class="card-name">Dňa: {{ $feedback->created_at}}</p>
                 <p class="card-text">{{ $feedback->text }}</p>
+                @can('editAll', App\Models\User::class)
                 <a href="{{route('feedbackBlog.edit', $feedback->id)}}" class="btn btn-sm btn-primary" role="button"> Edit </a>
                 <a href="javascript:void(0)" onclick="deleteFeedback({{ $feedback->id }})" class="btn btn-sm btn-danger">Delete</a>
-
+                @endcan
 
             </div>
         @endforeach
-
-
 
     </div>
 

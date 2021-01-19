@@ -34,6 +34,16 @@ class UserPolicy
         return Auth::user()->user_role == 1;
     }
 
+    public function editAll(User $user)
+    {
+        return Auth::user()->user_role == 1;
+    }
+
+    public function editSelf(User $user)
+    {
+        return true;
+    }
+
     /**
      * Determine whether the user can create models.
      *
@@ -54,7 +64,7 @@ class UserPolicy
      */
     public function update(User $user, User $model)
     {
-        return Auth::user()->user_role == 1;
+        return true;
     }
 
     /**
