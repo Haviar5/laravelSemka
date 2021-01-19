@@ -6,7 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
-use Illuminate\Support\Facades\Hash;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
 
 class RegisterController extends Controller
@@ -70,4 +71,24 @@ class RegisterController extends Controller
             'password' => $data['password'],
         ]);
     }
+
+    function checkEmailAvailability(Request $request)
+    {
+        if ($request->get('email')) {
+            $email = $request->get('email');
+            $data = DB::table("users")
+                ->where('email', $email)
+                ->count();
+            if ($data > 0) {
+                echo 'bad';
+            } else {
+                echo 'ok';
+            }
+        } else {
+            return 'bad';
+        }
+    }
+
 }
+
+

@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e70889cc-039a-4939-b632-071ce3ad7465" name="Default Changelist" comment="Funkcne feedbacky a users - ziadny dizajn">
-      <change afterPath="$PROJECT_DIR$/resources/views/feedbackBlog/myFeedback.blade.php" afterDir="false" />
+    <list default="true" id="e70889cc-039a-4939-b632-071ce3ad7465" name="Default Changelist" comment="dizajn progress">
+      <change beforePath="$PROJECT_DIR$/.idea/semkaLaravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/semkaLaravel.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FeedbackController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FeedbackController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/css.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mainBackground.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/mainBackground.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/feedbackBlog/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/feedbackBlog/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/form.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +191,7 @@
       <workItem from="1610803373658" duration="5493000" />
       <workItem from="1610891166634" duration="15660000" />
       <workItem from="1610974250363" duration="20431000" />
-      <workItem from="1611051757493" duration="4672000" />
+      <workItem from="1611051757493" duration="13270000" />
     </task>
     <task id="LOCAL-00001" summary="Funkcne feedbacky a users - ziadny dizajn">
       <created>1611052149561</created>
@@ -197,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611052149561</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="dizajn progress">
+      <created>1611056665837</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1611056665837</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,7 +215,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Funkcne feedbacky a users - ziadny dizajn" />
-    <option name="LAST_COMMIT_MESSAGE" value="Funkcne feedbacky a users - ziadny dizajn" />
+    <MESSAGE value="dizajn progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="dizajn progress" />
   </component>
   <component name="WindowStateProjectService">
     <state x="194" y="255" key="#SQL_Dialects" timestamp="1610980666493">
@@ -257,14 +268,15 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="469" y="136" key="NewPhpClassDialog/0.0.1536.824/3840.558.1920.1040@0.0.1536.824" timestamp="1610903350088" />
-    <state x="605" y="337" key="NewPhpFileDialog" timestamp="1610974396152">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="605" y="337" key="NewPhpFileDialog/0.0.1536.824/3840.558.1920.1040@0.0.1536.824" timestamp="1610974396152" />
-    <state x="4392" y="811" key="Vcs.Push.Dialog.v2" timestamp="1611052161906">
+    <state x="4596" y="983" key="NewPhpFileDialog" timestamp="1611059691739">
       <screen x="3840" y="558" width="1920" height="1040" />
     </state>
-    <state x="4392" y="811" key="Vcs.Push.Dialog.v2/0.0.1536.824/3840.558.1920.1040@3840.558.1920.1040" timestamp="1611052161906" />
+    <state x="605" y="337" key="NewPhpFileDialog/0.0.1536.824/3840.558.1920.1040@0.0.1536.824" timestamp="1610974396152" />
+    <state x="4596" y="983" key="NewPhpFileDialog/0.0.1536.824/3840.558.1920.1040@3840.558.1920.1040" timestamp="1611059691739" />
+    <state x="4392" y="811" key="Vcs.Push.Dialog.v2" timestamp="1611056669337">
+      <screen x="3840" y="558" width="1920" height="1040" />
+    </state>
+    <state x="4392" y="811" key="Vcs.Push.Dialog.v2/0.0.1536.824/3840.558.1920.1040@3840.558.1920.1040" timestamp="1611056669337" />
     <state x="4650" y="938" width="310" height="242" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1611003105374">
       <screen x="3840" y="558" width="1920" height="1040" />
     </state>

@@ -16,41 +16,48 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
 
         <!-- Styles -->
+        <style>
+
+            .mySlides {
+
+                height: 15%;
+                width: 60%;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+
+            }
+        </style>
         <link rel="stylesheet" href="{{ asset('css/css.css') }}">
 
     </head>
+
     <body>
+        <div id="carouselExampleIndicators" class="carousel slide mb-4 carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active " data-bs-interval="3000">
+                    <img class="d-block mySlides" src="{{ (url('http://localhost/semestralka/pictures/slideshow1.jpg')) }}" alt="First slide">
+                    <div class="slideContent centered">
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img class="d-block mySlides" src="{{ (url('http://localhost/semestralka/pictures/slideshow2.jpg')) }}" alt="Second slide">
+                    <div class="slideContent centered">
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img class="d-block mySlides" src="{{ (url('http://localhost/semestralka/pictures/slideshow3.jpg')) }}" alt="Third slide">
+                    <div class="slideContent centered">
+                    </div>
+                </div>
+            </div>
 
-
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="http://localhost/semestralka/pictures/slideshow1.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="http://localhost/semestralka/pictures/slideshow2.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="http://localhost/semestralka/pictures/slideshow3.jpg" class="d-block w-100" alt="...">
-            </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </a>
-    </div>
-
-
-
 
         @if (Route::has('login'))
             <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
@@ -71,8 +78,6 @@
             <h1>NEWS</h1>
 
         </div>
-
-
 
         <div class = "novinkyTopic">
 

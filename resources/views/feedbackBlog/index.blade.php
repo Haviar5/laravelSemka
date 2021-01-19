@@ -33,7 +33,8 @@
 
                                 <p class="card-text">{{ $feedback->text }}</p>
 
-                                <a href="{{route('feedbackBlog.delete', $feedback->id)}}" class="btn btn-sm btn-danger" role="button"> Delete </a>
+                                <!--<a href="{{route('feedbackBlog.delete', $feedback->id)}}" class="btn btn-sm btn-danger" role="button"> Delete </a>-->
+                                <a href="javascript:void(0)" onclick="deleteFeedback({{ $feedback->id }})" class="btn btn-sm btn-danger">Delete</a>
 
 
 
@@ -53,3 +54,21 @@
         </div>
     </div>
 @endsection
+
+<script>
+    function deleteFeedback(id)
+    {
+        if(confirm("Are you sure?"))
+        {
+            $.ajax({
+                url:'/semkaLaravel/public/feedbackBlog/'+id+'/delete',
+                type:'GET',
+                success:function(response)
+                {
+                    $('#rid'+id).remove();
+                    location.reload();
+                }
+            })
+        }
+    }
+</script>

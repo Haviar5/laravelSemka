@@ -11,6 +11,7 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
     <!-- Fonts -->
 
@@ -24,6 +25,8 @@
 
 </head>
 <body class="pozadie">
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">

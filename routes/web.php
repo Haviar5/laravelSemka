@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\InfoController;
@@ -21,9 +22,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::post('/checkEmail', [RegisterController::class, 'checkEmailAvailability'])->name('email_available.check');
+
 
 Route::group(['middleware' => ['auth']], function() {
 

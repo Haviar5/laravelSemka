@@ -15,7 +15,9 @@
     <div class="form-group row">
         <label for="name">Full name</label>
         <input type="text" class="form-control" id="name" name="name" placeholder="My Name" value="{{old('name', @$model->name)}}">
+
     </div>
+
 
     <div class="form-group row">
         <label for="mail">Email</label>
@@ -42,3 +44,6 @@
     </div>
 
 </form>
+
+
+
