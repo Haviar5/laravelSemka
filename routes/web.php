@@ -25,7 +25,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\InfoController::class, 'index'])->name('home');
 Route::post('/checkEmail', [RegisterController::class, 'checkEmailAvailability'])->name('email_available.check');
 Route::post('/checkName', [RegisterController::class, 'checkNameAvailability'])->name('name_available.check');
 

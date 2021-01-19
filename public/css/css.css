@@ -54,13 +54,26 @@ body {
 
 }
 
+.newFeed {
+
+    position: relative;
+    left: 50%;
+    margin-top: 10px;
+    transform: translateX(-50%);
+
+}
+
 .mySlides {
 
-    height: 15%;
-    width: 60%;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    width: 60%;
+
+}
+#myDIV {
+
+    display: none;
 
 }
 

@@ -50,17 +50,20 @@
         </div>
 
         @if (Route::has('login'))
-            <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+
                 @auth
-                    <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a>
+                    <a class="btn btn-secondary newFeed" href="{{ url('/home') }}" role="button">Home</a>
+
                 @else
-                    <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Login</a>
+                    <a class="btn btn-secondary " href="{{ route('login') }}" role="button">Login</a>
+
 
                     @if (Route::has('register'))
-                        <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
+                        <a class="btn btn-secondary " href="{{ route('register') }}" role="button">Register</a>
+
                     @endif
                 @endauth
-            </div>
+
         @endif
 
         <div class= "papier papier2">
