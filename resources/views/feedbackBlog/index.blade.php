@@ -26,33 +26,25 @@
                             <div class ="blog">
 
                                 <h5>{{ $feedback->title }}</h5>
-
-
                                 <p class="card-name">Napisal: {{ \App\Models\User::findOrFail($feedback->user_id)->name}}</p>
-
-
                                 <p class="card-text">{{ $feedback->text }}</p>
-
-                                <!--<a href="{{route('feedbackBlog.delete', $feedback->id)}}" class="btn btn-sm btn-danger" role="button"> Delete </a>-->
+                                <a href="{{route('feedbackBlog.edit', $feedback->id)}}" class="btn btn-sm btn-primary" role="button"> Edit </a>
                                 <a href="javascript:void(0)" onclick="deleteFeedback({{ $feedback->id }})" class="btn btn-sm btn-danger">Delete</a>
 
 
-
                             </div>
-
-
-
                         @endforeach
-
-
-
 
 
                     </div>
                 </div>
             </div>
         </div>
+
+
     </div>
+
+
 @endsection
 
 <script>

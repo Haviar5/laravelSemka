@@ -19,13 +19,13 @@ class FeedbackController extends Controller
     public function index()
     {
         $feedbacks = Feedback::all();
-        return view('feedbackBlog.index',['feedbacks'=>$feedbacks]);
+        return view('feedbackBlog.index', ['feedbacks' => $feedbacks]);
     }
 
     public function viewMy()
     {
         $feedbacks = Auth::user()->feedbacks;
-        return view('feedbackBlog.myFeedback',['feedbacks'=>$feedbacks]);
+        return view('feedbackBlog.myFeedback', ['feedbacks' => $feedbacks]);
     }
 
     /**
@@ -44,7 +44,7 @@ class FeedbackController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\RedirectResponse
      */
     public function store(Request $request)
@@ -52,9 +52,9 @@ class FeedbackController extends Controller
         //dd($request);
         $feedback = Feedback::create([
 
-            'text'=>request('text'),
-            'title'=>request('title'),
-            'user_id'=>auth()->id()
+            'text' => request('text'),
+            'title' => request('title'),
+            'user_id' => auth()->id()
 
         ]); //vytvorenie feedbacku a naplnenie z requestu
         $feedback->save();
@@ -64,7 +64,7 @@ class FeedbackController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
@@ -75,38 +75,63 @@ class FeedbackController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @param int $id
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\RedirectResponse
      */
-    public function edit($id)
+    public function edit( Feedback $feedback)
     {
-        //
+        //$feedback = DB::table('feedback')->where('id',$id);
+
+        return view('feedbackBlog.edit', [
+            'action' => route('feedbackBlog.update', $feedback->id),
+            'method' => 'put',
+            'model' => $feedback
+
+        ]);
+
+
+
+
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @param \Illuminate\Http\Request $request
+     * @param int $id
+     * @return \Illuminate\Http\RedirectResponse
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, int $id)
     {
-        //
+
+        $feedback = DB::table('feedback')->where('id',$id)->get()[0];
+
+        //dd($feedback);
+        $request->validate([
+            'title' => 'required',
+            'text' => 'required']);
+
+        //dd($feedback);
+        //$feedback->update($request->all());
+        DB::table('feedback')->where('id',$id)->update(array('title' => request('title')));
+        DB::table('feedback')->where('id',$id)->update(array('text' => request('text')));
+        //$feedback->save();
+        return redirect()->route('feedbackBlog.index');
+
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\RedirectResponse
      */
-    public function destroy(int $id)
+    public function destroy(Feedback $feedback)
     {
-        DB::table('feedback')
-            ->where('id',$id)
-            ->delete();
-        //$feedback->delete();
+        // DB::table('feedback')
+        //  ->where('id',$id)
+        // ->delete();
+        $feedback->delete();
         return redirect()->route('feedbackBlog.index');
     }
 }

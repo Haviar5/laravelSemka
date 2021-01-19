@@ -77,7 +77,7 @@ class UserController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param User $user
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
     public function edit(User $user)
@@ -94,16 +94,19 @@ class UserController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param \Illuminate\Http\Request $request
+     * @param User $user
      * @return \Illuminate\Http\RedirectResponse
      */
     public function update(Request $request,User $user)
     {
+        //dd($request);
         $request->validate([
             'name' => 'required',
             'email' => 'required|email|unique:users,email,' . $user->id,
             'password' => 'required|min:6|confirmed']);
+
+
 
         $user->update($request->all());
         return redirect()->route('user.index');

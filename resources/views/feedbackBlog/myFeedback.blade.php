@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">{{ __('Feedback') }}</div>
+                    <div class="card-header">{{ __('My profile') }}</div>
 
                     <div class="card-body">
 
@@ -15,6 +15,20 @@
                             </div>
                         @endif
 
+                            <table>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                </tr>
+                                <tr>
+                                    <td>{{Auth::user()->id}}</td>
+                                    <td>{{Auth::user()->name}}</td>
+                                    <td>{{Auth::user()->email}}</td>
+                                </tr>
+                            </table>
+
+                            <a href="{{route('user.edit', [Auth::user()->id])}} " title="Edit" class="btn btn-sm btn-primary" style="left: 50%;position: relative; transform: translateX(-50%); margin-top: 10px">Edit </a>
 
                         @foreach($feedbacks as $feedback)
                             <div class ="blog">

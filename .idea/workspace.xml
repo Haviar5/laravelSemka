@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e70889cc-039a-4939-b632-071ce3ad7465" name="Default Changelist" comment="dizajn progress">
-      <change beforePath="$PROJECT_DIR$/.idea/semkaLaravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/semkaLaravel.iml" afterDir="false" />
+    <list default="true" id="e70889cc-039a-4939-b632-071ce3ad7465" name="Default Changelist" comment="slideshow funguje + ajax autentifikacia emailu funguje">
+      <change afterPath="$PROJECT_DIR$/resources/views/feedbackBlog/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FeedbackController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FeedbackController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/UserPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/UserPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/aboutUs/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/aboutUs/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/feedbackBlog/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/feedbackBlog/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/feedbackBlog/myFeedback.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/feedbackBlog/myFeedback.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/form.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -159,7 +164,7 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../semestralka" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -191,7 +196,8 @@
       <workItem from="1610803373658" duration="5493000" />
       <workItem from="1610891166634" duration="15660000" />
       <workItem from="1610974250363" duration="20431000" />
-      <workItem from="1611051757493" duration="13270000" />
+      <workItem from="1611051757493" duration="21887000" />
+      <workItem from="1611081810204" duration="8310000" />
     </task>
     <task id="LOCAL-00001" summary="Funkcne feedbacky a users - ziadny dizajn">
       <created>1611052149561</created>
@@ -207,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611056665837</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="slideshow funguje + ajax autentifikacia emailu funguje">
+      <created>1611066178759</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1611066178759</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,7 +229,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Funkcne feedbacky a users - ziadny dizajn" />
     <MESSAGE value="dizajn progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="dizajn progress" />
+    <MESSAGE value="slideshow funguje + ajax autentifikacia emailu funguje" />
+    <option name="LAST_COMMIT_MESSAGE" value="slideshow funguje + ajax autentifikacia emailu funguje" />
   </component>
   <component name="WindowStateProjectService">
     <state x="194" y="255" key="#SQL_Dialects" timestamp="1610980666493">
@@ -273,10 +287,10 @@
     </state>
     <state x="605" y="337" key="NewPhpFileDialog/0.0.1536.824/3840.558.1920.1040@0.0.1536.824" timestamp="1610974396152" />
     <state x="4596" y="983" key="NewPhpFileDialog/0.0.1536.824/3840.558.1920.1040@3840.558.1920.1040" timestamp="1611059691739" />
-    <state x="4392" y="811" key="Vcs.Push.Dialog.v2" timestamp="1611056669337">
+    <state x="4392" y="811" key="Vcs.Push.Dialog.v2" timestamp="1611066183290">
       <screen x="3840" y="558" width="1920" height="1040" />
     </state>
-    <state x="4392" y="811" key="Vcs.Push.Dialog.v2/0.0.1536.824/3840.558.1920.1040@3840.558.1920.1040" timestamp="1611056669337" />
+    <state x="4392" y="811" key="Vcs.Push.Dialog.v2/0.0.1536.824/3840.558.1920.1040@3840.558.1920.1040" timestamp="1611066183290" />
     <state x="4650" y="938" width="310" height="242" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1611003105374">
       <screen x="3840" y="558" width="1920" height="1040" />
     </state>
@@ -287,11 +301,11 @@
     </state>
     <state x="566" y="234" width="404" height="353" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1536.824/3840.558.1920.1040@0.0.1536.824" timestamp="1610903367758" />
     <state x="4548" y="853" width="505" height="442" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1536.824/3840.558.1920.1040@3840.558.1920.1040" timestamp="1611001582017" />
-    <state x="4417" y="801" width="791" height="648" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1611004777718">
+    <state x="4417" y="801" width="791" height="648" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1611068714871">
       <screen x="3840" y="558" width="1920" height="1040" />
     </state>
     <state x="613" y="229" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.824/3840.558.1920.1040@0.0.1536.824" timestamp="1610983158644" />
-    <state x="4417" y="801" width="791" height="648" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.824/3840.558.1920.1040@3840.558.1920.1040" timestamp="1611004777718" />
+    <state x="4417" y="801" width="791" height="648" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.824/3840.558.1920.1040@3840.558.1920.1040" timestamp="1611068714871" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1610805805795">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Semestralka</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -16,23 +16,13 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
 
         <!-- Styles -->
-        <style>
-
-            .mySlides {
-
-                height: 15%;
-                width: 60%;
-                position: relative;
-                left: 50%;
-                transform: translateX(-50%);
-
-            }
-        </style>
         <link rel="stylesheet" href="{{ asset('css/css.css') }}">
 
     </head>
 
     <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
         <div id="carouselExampleIndicators" class="carousel slide mb-4 carousel-fade" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -120,3 +110,43 @@
 
     </body>
 </html>
+
+<script>
+
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function()
+    {
+
+        scrollFunction()
+
+    };
+
+    function scrollFunction()
+    {
+
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
+        {
+
+            mybutton.style.display = "block";
+
+        } else {
+
+            mybutton.style.display = "none";
+
+        }
+
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction()
+    {
+
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+
+    }
+
+</script>

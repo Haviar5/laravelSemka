@@ -54,7 +54,7 @@ class UserPolicy
      */
     public function update(User $user, User $model)
     {
-        //
+        return Auth::user()->user_role == 1;
     }
 
     /**
@@ -78,7 +78,7 @@ class UserPolicy
      */
     public function restore(User $user, User $model)
     {
-        //
+        return Auth::user()->user_role == 1;
     }
 
     /**
@@ -90,6 +90,6 @@ class UserPolicy
      */
     public function forceDelete(User $user, User $model)
     {
-        //
+        return Auth::user()->user_role == 1;
     }
 }

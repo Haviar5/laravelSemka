@@ -16,11 +16,14 @@
 
                             <div class="col-md-6">
                                 <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+
+                                <span id="error_name"></span>
                                 @error('name')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
                                 @enderror
+
                             </div>
                         </div>
 
@@ -101,6 +104,32 @@
                 })
             }
         });
+
+
+
+        $('#name').blur(function () {
+            var name = $('#name').val();
+            var _token = $('input[name="_token"]').val();
+            if (name.length >= 6) {
+                $.ajax({
+                    url: "{{ route('name_available.check') }}",
+                    method: "POST",
+                    data: {name: name, _token: _token},
+                    success: function (result) {
+                        if (result == 'ok') {
+                            $('#error_name').html('<label class="text-success">This name is available</label>');
+                            $('#name').removeClass('has-error');
+                            $('#register').attr('disabled', false);
+                        } else {
+                            $('#error_name').html('<label class="text-danger">This name has been taken</label>');
+                            $('#name').addClass('has-error');
+                            $('#register').attr('disabled', 'disabled');
+                        }
+                    }
+                })
+            }
+        });
+
     });
 </script>
 @endsection

@@ -89,6 +89,23 @@ class RegisterController extends Controller
         }
     }
 
+    function checkNameAvailability(Request $request)
+    {
+        if ($request->get('name')) {
+            $name = $request->get('name');
+            $data = DB::table("users")
+                ->where('name', $name)
+                ->count();
+            if ($data > 0) {
+                echo 'bad';
+            } else {
+                echo 'ok';
+            }
+        } else {
+            return 'bad';
+        }
+    }
+
 }
 
 

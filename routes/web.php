@@ -27,15 +27,15 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::post('/checkEmail', [RegisterController::class, 'checkEmailAvailability'])->name('email_available.check');
+Route::post('/checkName', [RegisterController::class, 'checkNameAvailability'])->name('name_available.check');
 
 
 Route::group(['middleware' => ['auth']], function() {
 
     Route::resource('user' ,UserController::class);
-    //Route::get('user/{user}/delete', ['as' => 'user.delete', 'uses' => 'UserController@destroy']); vraj pri akcii sa pouziva toto
     Route::get('user/{user}/delete', [UserController::class, 'destroy'])->name('user.delete');
-    Route::get('feedbackBlog/{id}/delete', [FeedbackController::class, 'destroy'])->name('feedbackBlog.delete');
-    Route::get('feedbackBlog/edit', [FeedbackController::class, 'edit'])->name('feedbackBlog.edit');
+    Route::get('feedbackBlog/{feedback}/delete', [FeedbackController::class, 'destroy'])->name('feedbackBlog.delete');
+    Route::get('feedbackBlog/{feedback}/edit', [FeedbackController::class, 'edit'])->name('feedbackBlog.edit');
     Route::get('feedbackBlog/viewMy', [FeedbackController::class, 'viewMy'])->name('feedbackBlog.viewMy');
     Route::resource('feedbackBlog' ,FeedbackController::class);
     Route::resource('aboutUs' ,InfoController::class);
