@@ -25,7 +25,7 @@ class FeedbackController extends Controller
     public function viewMy()
     {
         $feedbacks = Auth::user()->feedbacks;
-        return view('feedbackBlog.index',['feedbacks'=>$feedbacks]);
+        return view('feedbackBlog.myFeedback',['feedbacks'=>$feedbacks]);
     }
 
     /**

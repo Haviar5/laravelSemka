@@ -1,7 +1,7 @@
 
-.pozadie {
+body {
 
-    background-image: url("public/mainBackground.jpg");
+    background-image: url("mainBackground.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -12,6 +12,17 @@
     border-radius: 50%;
     left: 95%;
 }
+
+.mySlides {display:none;
+    height: 400px;
+    width: 600px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
 
 .papier {
     margin-top: 100px;
@@ -94,8 +105,6 @@
 
 
 }
-
-
 
 .novinkyTopic {
     top: 50%;

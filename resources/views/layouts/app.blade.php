@@ -18,9 +18,10 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/css.css') }}">
+
+
 </head>
 <body class="pozadie">
     <div id="app">
@@ -96,7 +97,7 @@
 
                                     <a class="dropdown-item" href="{{ route('feedbackBlog.viewMy') }}">
 
-                                        {{ __('Tlak') }}
+                                        {{ __('My feedbacks') }}
                                     </a>
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf

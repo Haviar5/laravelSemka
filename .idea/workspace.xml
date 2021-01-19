@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e70889cc-039a-4939-b632-071ce3ad7465" name="Default Changelist" comment="" />
+    <list default="true" id="e70889cc-039a-4939-b632-071ce3ad7465" name="Default Changelist" comment="Funkcne feedbacky a users - ziadny dizajn">
+      <change afterPath="$PROJECT_DIR$/resources/views/feedbackBlog/myFeedback.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FeedbackController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FeedbackController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mainBackground.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/mainBackground.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -147,11 +156,14 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../semestralka" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Pavol\Desktop\Skola\VAII\php_mysql\www\semkaLaravel\public\css" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Pavol\Desktop\Skola\VAII\php_mysql\www\semkaLaravel\public" />
       <recent name="C:\Users\Pavol\Desktop\Skola\VAII\php_mysql\www\semkaLaravel\public\css" />
@@ -176,12 +188,24 @@
       <workItem from="1610803373658" duration="5493000" />
       <workItem from="1610891166634" duration="15660000" />
       <workItem from="1610974250363" duration="20431000" />
-      <workItem from="1611051757493" duration="328000" />
+      <workItem from="1611051757493" duration="4672000" />
     </task>
+    <task id="LOCAL-00001" summary="Funkcne feedbacky a users - ziadny dizajn">
+      <created>1611052149561</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1611052149561</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Funkcne feedbacky a users - ziadny dizajn" />
+    <option name="LAST_COMMIT_MESSAGE" value="Funkcne feedbacky a users - ziadny dizajn" />
   </component>
   <component name="WindowStateProjectService">
     <state x="194" y="255" key="#SQL_Dialects" timestamp="1610980666493">
@@ -204,10 +228,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="500" y="168" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/3840.558.1920.1040@0.0.1536.824" timestamp="1610982920393" />
-    <state x="550" y="168" key="FileChooserDialogImpl" timestamp="1610979071160">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="4528" y="770" key="FileChooserDialogImpl" timestamp="1611053236737">
+      <screen x="3840" y="558" width="1920" height="1040" />
     </state>
     <state x="550" y="168" key="FileChooserDialogImpl/0.0.1536.824/3840.558.1920.1040@0.0.1536.824" timestamp="1610979071160" />
+    <state x="4528" y="770" key="FileChooserDialogImpl/0.0.1536.824/3840.558.1920.1040@3840.558.1920.1040" timestamp="1611053236737" />
     <state width="1293" height="282" key="GridCell.Tab.0.bottom" timestamp="1611004360008">
       <screen x="3840" y="558" width="1920" height="1040" />
     </state>
@@ -236,6 +261,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="605" y="337" key="NewPhpFileDialog/0.0.1536.824/3840.558.1920.1040@0.0.1536.824" timestamp="1610974396152" />
+    <state x="4392" y="811" key="Vcs.Push.Dialog.v2" timestamp="1611052161906">
+      <screen x="3840" y="558" width="1920" height="1040" />
+    </state>
+    <state x="4392" y="811" key="Vcs.Push.Dialog.v2/0.0.1536.824/3840.558.1920.1040@3840.558.1920.1040" timestamp="1611052161906" />
     <state x="4650" y="938" width="310" height="242" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1611003105374">
       <screen x="3840" y="558" width="1920" height="1040" />
     </state>
