@@ -54,7 +54,8 @@ class FeedbackController extends Controller
 
             'text' => request('text'),
             'title' => request('title'),
-            'user_id' => auth()->id()
+            'user_id' => auth()->id(),
+            'opinion' => request('opinion')
 
         ]); //vytvorenie feedbacku a naplnenie z requestu
         $feedback->save();

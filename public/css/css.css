@@ -15,7 +15,7 @@ body {
 
 
 .papier {
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 20px;
     position: relative;
     top: 15%;
@@ -30,14 +30,37 @@ body {
     overflow: auto;
 
 }
+
+.kartaW-50 {
+
+    width: 50%;
+    position: relative;
+    padding-right: 0px;
+    margin: 0px;
+
+}
+
 .papier h1 {
     text-align: center;
 
 }
 
+.opinionImg {
+
+    max-height: 10%;
+    height: 10%;
+    max-width: 10%;
+    width: 10%;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+
+
+}
+
 .blog {
 
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 20px;
     position: relative;
     width: 63.8%;
@@ -54,11 +77,31 @@ body {
 
 }
 
+.logBtn {
+    margin-left: 10px;
+    position: relative;
+    left: 46%;
+
+    transform: translateX(-50%);
+
+}
+
+.regBtn {
+    margin-left: 10px;
+    position: relative;
+    left: 47%;
+
+    transform: translateX(-50%);
+
+}
+
 .newFeed {
 
+    margin-top: 20px;
+    margin-left: 10px;
     position: relative;
     left: 50%;
-    margin-top: 10px;
+
     transform: translateX(-50%);
 
 }

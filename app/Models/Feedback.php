@@ -20,6 +20,7 @@ class Feedback extends Authenticatable
         'user_id',
         'title',
         'text',
+        'opinion'
     ];
 
     /**

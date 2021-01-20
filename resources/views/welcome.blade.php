@@ -55,11 +55,11 @@
                     <a class="btn btn-secondary newFeed" href="{{ url('/home') }}" role="button">Home</a>
 
                 @else
-                    <a class="btn btn-secondary " href="{{ route('login') }}" role="button">Login</a>
+                    <a class="btn btn-secondary logBtn" href="{{ route('login') }}" role="button">Login</a>
 
 
                     @if (Route::has('register'))
-                        <a class="btn btn-secondary " href="{{ route('register') }}" role="button">Register</a>
+                        <a class="btn btn-secondary regBtn" href="{{ route('register') }}" role="button">Register</a>
 
                     @endif
                 @endauth

@@ -47,6 +47,13 @@
                 <div class ="blog">
 
                     <h5>{{ $feedback->title }}</h5>
+
+                    @if($feedback->opinion == 2)
+                        <img class="opinionImg" src="https://www.freeiconspng.com/uploads/facebook-dislike-transparent-25.png">
+                    @else
+                        <img class= "opinionImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Facebook_like_thumb.png/1196px-Facebook_like_thumb.png">
+                    @endif
+
                     <p class="card-name">Napisal: {{ \App\Models\User::findOrFail($feedback->user_id)->name}}</p>
                     <p class="card-text">{{ $feedback->text }}</p>
 
@@ -56,6 +63,8 @@
                 </div>
 
             @endforeach
+
+
 
         </div>
 

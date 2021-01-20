@@ -24,10 +24,10 @@
     </div>
 
     <div class="form-group row">
-    <label for="cars">Your opinion of us:</label>
-    <select required id="cars" name="cars">
-        <option value="volvo">Positive</option>
-        <option value="saab">Negative</option>
+    <label for="opinion">Your opinion of us:</label>
+    <select required id="opinion" name="opinion">
+        <option value="1">Positive</option>
+        <option value="2">Negative</option>
     </select>
     </div>
 
