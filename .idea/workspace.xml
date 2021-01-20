@@ -19,16 +19,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e70889cc-039a-4939-b632-071ce3ad7465" name="Default Changelist" comment="presmerovanie upravy usera/feedbacku z profilu funguje, edit usera funguje">
+    <list default="true" id="e70889cc-039a-4939-b632-071ce3ad7465" name="Default Changelist" comment="like/dislike obrazok funguje">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/1b64d3fd-3bf0-4b01-b05f-080196e891c5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1b64d3fd-3bf0-4b01-b05f-080196e891c5.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FeedbackController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FeedbackController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Feedback.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Feedback.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/contact/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/feedbackBlog/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/feedbackBlog/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/feedbackBlog/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/feedbackBlog/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/feedbackBlog/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/feedbackBlog/form.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/feedbackBlog/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/feedbackBlog/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/feedbackBlog/myFeedback.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/feedbackBlog/myFeedback.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/form.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +54,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -209,7 +216,7 @@
       <workItem from="1610974250363" duration="20431000" />
       <workItem from="1611051757493" duration="21887000" />
       <workItem from="1611081810204" duration="17815000" />
-      <workItem from="1611138016914" duration="3798000" />
+      <workItem from="1611138016914" duration="12950000" />
     </task>
     <task id="LOCAL-00001" summary="Funkcne feedbacky a users - ziadny dizajn">
       <created>1611052149561</created>
@@ -260,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611100164923</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="like/dislike obrazok funguje">
+      <created>1611141866954</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1611141866954</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,7 +299,8 @@
     <MESSAGE value="profil tab upraveny, autentifikacia mena nefunguje dobre, edit password nefuguje" />
     <MESSAGE value="zobrazovanie/skryvanie feedbackov na profil tabe funkcne, rozrobene like/dislike" />
     <MESSAGE value="presmerovanie upravy usera/feedbacku z profilu funguje, edit usera funguje" />
-    <option name="LAST_COMMIT_MESSAGE" value="presmerovanie upravy usera/feedbacku z profilu funguje, edit usera funguje" />
+    <MESSAGE value="like/dislike obrazok funguje" />
+    <option name="LAST_COMMIT_MESSAGE" value="like/dislike obrazok funguje" />
   </component>
   <component name="WindowStateProjectService">
     <state x="194" y="255" key="#SQL_Dialects" timestamp="1610980666493">
@@ -304,10 +319,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="500" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/3840.558.1920.1040@0.0.1536.824" timestamp="1610905587831" />
-    <state x="500" y="168" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610982920393">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="4465" y="770" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1611145655819">
+      <screen x="3840" y="558" width="1920" height="1040" />
     </state>
     <state x="500" y="168" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/3840.558.1920.1040@0.0.1536.824" timestamp="1610982920393" />
+    <state x="4465" y="770" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/3840.558.1920.1040@3840.558.1920.1040" timestamp="1611145655819" />
     <state x="4528" y="770" key="FileChooserDialogImpl" timestamp="1611053236737">
       <screen x="3840" y="558" width="1920" height="1040" />
     </state>
@@ -333,34 +349,39 @@
     </state>
     <state width="1493" height="211" key="GridCell.Tab.0.right/0.0.1536.824/3840.558.1920.1040@0.0.1536.824" timestamp="1610803564522" />
     <state width="1293" height="282" key="GridCell.Tab.0.right/0.0.1536.824/3840.558.1920.1040@3840.558.1920.1040" timestamp="1611004360008" />
-    <state x="469" y="136" key="NewPhpClassDialog" timestamp="1610903350088">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="4426" y="730" key="NewPhpClassDialog" timestamp="1611143513651">
+      <screen x="3840" y="558" width="1920" height="1040" />
     </state>
     <state x="469" y="136" key="NewPhpClassDialog/0.0.1536.824/3840.558.1920.1040@0.0.1536.824" timestamp="1610903350088" />
+    <state x="4426" y="730" key="NewPhpClassDialog/0.0.1536.824/3840.558.1920.1040@3840.558.1920.1040" timestamp="1611143513651" />
     <state x="4596" y="983" key="NewPhpFileDialog" timestamp="1611059691739">
       <screen x="3840" y="558" width="1920" height="1040" />
     </state>
     <state x="605" y="337" key="NewPhpFileDialog/0.0.1536.824/3840.558.1920.1040@0.0.1536.824" timestamp="1610974396152" />
     <state x="4596" y="983" key="NewPhpFileDialog/0.0.1536.824/3840.558.1920.1040@3840.558.1920.1040" timestamp="1611059691739" />
-    <state x="4392" y="811" key="Vcs.Push.Dialog.v2" timestamp="1611100168864">
+    <state x="4392" y="811" key="Vcs.Push.Dialog.v2" timestamp="1611141870687">
       <screen x="3840" y="558" width="1920" height="1040" />
     </state>
-    <state x="4392" y="811" key="Vcs.Push.Dialog.v2/0.0.1536.824/3840.558.1920.1040@3840.558.1920.1040" timestamp="1611100168864" />
+    <state x="4392" y="811" key="Vcs.Push.Dialog.v2/0.0.1536.824/3840.558.1920.1040@3840.558.1920.1040" timestamp="1611141870687" />
     <state x="4650" y="938" width="310" height="242" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1611139115314">
       <screen x="3840" y="558" width="1920" height="1040" />
     </state>
     <state x="648" y="301" width="310" height="242" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.824/3840.558.1920.1040@0.0.1536.824" timestamp="1610983163694" />
     <state x="4650" y="938" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.824/3840.558.1920.1040@3840.558.1920.1040" timestamp="1611139115314" />
-    <state x="4548" y="853" width="505" height="442" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1611001582017">
+    <state x="4548" y="853" width="505" height="438" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1611144796629">
       <screen x="3840" y="558" width="1920" height="1040" />
     </state>
     <state x="566" y="234" width="404" height="353" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1536.824/3840.558.1920.1040@0.0.1536.824" timestamp="1610903367758" />
-    <state x="4548" y="853" width="505" height="442" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1536.824/3840.558.1920.1040@3840.558.1920.1040" timestamp="1611001582017" />
-    <state x="4417" y="801" width="791" height="648" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1611139163924">
+    <state x="4548" y="853" width="505" height="438" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1536.824/3840.558.1920.1040@3840.558.1920.1040" timestamp="1611144796629" />
+    <state x="4417" y="801" width="791" height="648" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1611148370221">
       <screen x="3840" y="558" width="1920" height="1040" />
     </state>
     <state x="613" y="229" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.824/3840.558.1920.1040@0.0.1536.824" timestamp="1610983158644" />
-    <state x="4417" y="801" width="791" height="648" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.824/3840.558.1920.1040@3840.558.1920.1040" timestamp="1611139163924" />
+    <state x="4417" y="801" width="791" height="648" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.824/3840.558.1920.1040@3840.558.1920.1040" timestamp="1611148370221" />
+    <state x="4617" y="992" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611147675824">
+      <screen x="3840" y="558" width="1920" height="1040" />
+    </state>
+    <state x="4617" y="992" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/3840.558.1920.1040@3840.558.1920.1040" timestamp="1611147675824" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1610805805795">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

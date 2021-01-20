@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 @extends('layouts.app')
 
 @section('content')
@@ -6,7 +7,7 @@
         <div class="kontajner">
             <img src="http://localhost/semestralka/pictures/avatar1.png" alt="Avatar" style="width:100%">
             <div class="overlay">
-                <div class="text">Hi, im owner!</div>
+                <div class="textContact">Hi, im owner!</div>
             </div>
             <h4><b>John Owner</b></h4>
             <p>Owner</p>
@@ -21,7 +22,7 @@
         <div class="kontajner">
             <img src="http://localhost/semestralka/pictures/avatar2.png" alt="Avatar" style="width:100%">
             <div class="overlay">
-                <div class="text">Hi, im waitress!</div>
+                <div class="textContact">Hi, im waitress!</div>
             </div>
             <h4><b>Andrea Waitress</b></h4>
             <p>Waitress</p>

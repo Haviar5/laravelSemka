@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 @extends('layouts.app')
 
 @section('content')
@@ -49,9 +50,9 @@
                     <h5>{{ $feedback->title }}</h5>
 
                     @if($feedback->opinion == 2)
-                        <img class="opinionImg" src="https://www.freeiconspng.com/uploads/facebook-dislike-transparent-25.png">
+                        <img class="opinionImg" src="https://www.freeiconspng.com/uploads/facebook-dislike-transparent-25.png" alt="opinionObrazok">
                     @else
-                        <img class= "opinionImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Facebook_like_thumb.png/1196px-Facebook_like_thumb.png">
+                        <img class= "opinionImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Facebook_like_thumb.png/1196px-Facebook_like_thumb.png" alt="opinionObrazok">
                     @endif
 
                     <p class="card-name">Napisal: {{ \App\Models\User::findOrFail($feedback->user_id)->name}}</p>

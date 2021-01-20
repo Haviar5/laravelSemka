@@ -4,7 +4,9 @@ use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\InfoController;
+use App\Http\Controllers\NewsController;
 use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*

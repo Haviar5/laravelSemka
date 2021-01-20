@@ -233,8 +233,14 @@ tr:nth-child(even) {
     position: relative;
 
 }
+
+.padd-top {
+
+    padding-top: 10px;
+}
 .kontajner {
     padding: 0px 0px;
+    background-color: darkseagreen;
 }
 
 .nadpis1 {
@@ -329,7 +335,7 @@ tr:nth-child(even) {
     height: 100%;
 }
 
-.text {
+.textContact {
     color: white;
     font-size: 20px;
     position: absolute;

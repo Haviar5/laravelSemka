@@ -25,7 +25,7 @@
 
     <div class="form-group row">
     <label for="opinion">Your opinion of us:</label>
-    <select required id="opinion" name="opinion">
+    <select required id="opinion" name="opinion" size="2">
         <option value="1">Positive</option>
         <option value="2">Negative</option>
     </select>

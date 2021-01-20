@@ -1,4 +1,3 @@
-<!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
@@ -29,7 +28,7 @@
 
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
+            <div class="container padd-top">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>
@@ -39,7 +38,7 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
+                    <div class="navbar-nav mr-auto">
 
                         @can('view', App\Models\User::class)
 
@@ -68,26 +67,26 @@
                             <a class = "nav-link" href="{{ route('contact.index') }}">{{ __('Contact') }}</a>
 
                         @endauth
-                    </ul>
+                    </div>
 
                     <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
+                    <div class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                                </li>
+
+                                    <a class="nav-link nav-item" href="{{ route('login') }}">{{ __('Login') }}</a>
+
                             @endif
 
                             @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
+
+                                    <a class="nav-link nav-item" href="{{ route('register') }}">{{ __('Register') }}</a>
+
                             @endif
                         @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            <div class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     {{ Auth::user()->name }}
                                 </a>
 
@@ -106,9 +105,9 @@
                                         @csrf
                                     </form>
                                 </div>
-                            </li>
+                            </div>
                         @endguest
-                    </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -117,8 +116,6 @@
             @yield('content')
         </main>
     </div>
-</body>
-</html>
 
 <script>
 
@@ -159,3 +156,8 @@
     }
 
 </script>
+
+</body>
+</html>
+
+

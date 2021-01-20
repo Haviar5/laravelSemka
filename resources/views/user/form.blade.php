@@ -20,8 +20,8 @@
 
 
     <div class="form-group row">
-        <label for="mail">Email</label>
-        <input type="email" class="form-control" id="email" name="email"  aria-describedby="emailHelp" placeholder="email@example.com" value="{{@$model->email}}">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="email@example.com" value="{{@$model->email}}">
 
     </div>
 

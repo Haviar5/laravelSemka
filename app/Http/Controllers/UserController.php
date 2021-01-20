@@ -30,8 +30,8 @@ class UserController extends Controller
             ->setColumn('email', 'Email address')
             ->setActionColumn([
                 'wrapper' => function($value, $row) {
-                return '<a href="' .route('user.edit', [$row->id]) . ' "title="Edit" class="btn btn-sm btn-primary">Edit </a>
-                        <a href="' .route ('user.delete', $row->id) . '"title="Delete" class = "btn btn-sm btn-danger" data-confirm="Are you sure?">Delete</a>';
+                return '<a href="' .route('user.edit', [$row->id]) . ' " title="Edit" class="btn btn-sm btn-primary">Edit </a>
+                        <a href="' .route ('user.delete', $row->id) . '" title="Delete" class = "btn btn-sm btn-danger" data-confirm="Are you sure?">Delete</a>';
                 }
             ]);
 
